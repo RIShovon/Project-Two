@@ -7,6 +7,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* global container */
 .container {
     max-width: 1170px;
@@ -16,6 +18,9 @@
 /* banner section style */
 .owl-dots {
     display: none;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 .owl-nav .owl-next span {
@@ -144,6 +149,12 @@
     margin-top: 30px;
 }
 
+.Fruit-Shop .container a:hover {
+    background-color: #fa9c12;
+    color: white;
+    transition: .3s;
+}
+
 /* about our fruit shop section style */
 .About-Our-Fruit-Shop {
     display: grid;
@@ -209,6 +220,12 @@
     margin-top: 35px;
 }
 
+.About-Our-Fruit-Shop .right a:hover {
+    background-color: #fa9c12;
+    color: white;
+    transition: .3s;
+}
+
 /* fresh fruit section style */
 .Fresh-Fruit {
     padding: 190px 0px;
@@ -238,18 +255,18 @@
     top: 50%;
 }
 
-.Fresh-Fruit .container .gallary{
+.Fresh-Fruit .container .gallary {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
     margin-top: 80px;
 }
 
-.Fresh-Fruit .container .gallary .item{
+.Fresh-Fruit .container .gallary .item {
     position: relative;
 }
 
-.Fresh-Fruit .container .gallary .item::after{
+.Fresh-Fruit .container .gallary .item::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -260,13 +277,16 @@
     opacity: 0;
     transition: .3s;
 }
-.Fresh-Fruit .container .gallary .item:hover::after{
+
+.Fresh-Fruit .container .gallary .item:hover::after {
     opacity: 0.8;
 }
-.Fresh-Fruit .container .gallary .item img{
+
+.Fresh-Fruit .container .gallary .item img {
     width: 100%;
 }
-.Fresh-Fruit .container .gallary .item .caption{
+
+.Fresh-Fruit .container .gallary .item .caption {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -277,15 +297,18 @@
     z-index: 2;
     transition: .3s;
 }
-.Fresh-Fruit .container .gallary .item:hover .caption{
+
+.Fresh-Fruit .container .gallary .item:hover .caption {
     opacity: 1;
 }
-.Fresh-Fruit .container .gallary .item .caption h4{
+
+.Fresh-Fruit .container .gallary .item .caption h4 {
     font-size: 30px;
     font-weight: 400;
     margin-bottom: 40px;
 }
-.Fresh-Fruit .container .gallary .item .caption a{
+
+.Fresh-Fruit .container .gallary .item .caption a {
     display: inline-block;
     background-color: transparent;
     border: 1px solid white;
@@ -295,3 +318,295 @@
     font-weight: 700;
     font-size: 18px;
 }
+
+.Fresh-Fruit .container .gallary .item .caption a:hover {
+    background-color: #fa9c12;
+    color: white;
+    transition: .3s;
+}
+
+/* Testimonial Section style */
+.Testimonial-section {
+    padding-bottom: 130px;
+}
+
+.Testimonial-section .container {
+    /* max-width: 1480px; */
+    /* padding: 120px 0px; */
+    text-align: center;
+    overflow: hidden;
+}
+
+.Testimonial-section .container h2 {
+    font-size: 50px;
+    font-weight: 400;
+    text-transform: capitalize;
+    position: relative;
+    display: inline-block;
+}
+
+.Testimonial-section .container h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #b7b7b7;
+    right: -104%;
+    top: 50%;
+}
+
+.client-feedback {
+    margin-top: 60px;
+}
+
+.client-feedback .owl-nav .owl-next span {
+    position: absolute !important;
+    right: 250px !important;
+    top: 25% !important;
+    transform: translateY(-50%);
+    background-color: #252525 !important;
+    color: white !important;
+    width: 60px !important;
+    height: 60px !important;
+    text-align: center !important;
+    align-content: center !important;
+    border-radius: 50px !important;
+    font-size: 35px !important;
+    cursor: pointer !important;
+}
+
+.client-feedback .owl-nav .owl-prev span {
+    position: absolute !important;
+    left: 250px !important;
+    top: 25% !important;
+    transform: translateY(-50%);
+    background-color: #252525 !important;
+    color: white !important;
+    width: 60px !important;
+    height: 60px !important;
+    text-align: center !important;
+    align-content: center !important;
+    border-radius: 50px !important;
+    font-size: 35px !important;
+    cursor: pointer !important;
+}
+
+.client-feedback .client-photo {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.feedback h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 19px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.feedback p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #1a1a1b;
+    font-family: "Roboto", sans-serif;
+}
+
+.feedback p span {
+    position: relative;
+}
+
+.feedback p span::before {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    left: -40px;
+    top: -5px;
+    background-image: url(Images/left-quote.png);
+    background-repeat: no-repeat;
+}
+
+.feedback p span::after {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    right: -40px;
+    top: -5px;
+    background-image: url(Images/right-quote.png);
+    background-repeat: no-repeat;
+}
+
+/* call back section style */
+.call-back {
+    padding-bottom: 190px;
+}
+
+.call-back .container {
+    text-align: center;
+    overflow: hidden;
+}
+
+.call-back .container h2 {
+    font-size: 50px;
+    font-weight: 400;
+    text-transform: capitalize;
+    position: relative;
+    display: inline-block;
+}
+
+.call-back .container h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #b7b7b7;
+    left: -104%;
+    top: 50%;
+}
+
+.call-back .contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.call-back .left .wrapper {
+    max-width: 520px;
+    float: right;
+}
+
+.call-back .left .wrapper form input,
+textarea {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: none;
+    box-shadow: 1px 2px 10px #efefef;
+    resize: none;
+}
+
+.call-back .left .wrapper form button {
+    background-color: #fa9c12;
+    padding: 10px 60px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: 1px solid #fa9c12;
+}
+
+.call-back .left .wrapper form button:hover {
+    background-color: white;
+    color: #fa9c12;
+    transition: .3s;
+}
+
+/* footer section style */
+footer {
+    text-align: center;
+}
+
+footer .footer-content {
+    padding: 130px 0px;
+    background-color: #2e2e2e;
+}
+
+footer .footer-content .container h2 {
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+footer .footer-content .container .direct-contact ul {
+    list-style-type: none;
+    margin-top: 55px;
+    margin-bottom: 58px;
+}
+
+footer .footer-content .container .direct-contact ul li {
+    display: inline-block;
+    margin-right: 95px;
+}
+
+footer .footer-content .container .direct-contact ul li a {
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+footer .footer-content .container .direct-contact ul li a i {
+    margin-right: 15px;
+}
+
+footer .footer-content .container .quick-contact {
+    max-width: 1010px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    
+}
+
+footer .footer-content .container .quick-contact .right {
+    text-align: right;
+}
+
+footer .footer-content .container .quick-contact .right a {
+    color: #2e2e2e;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 100%;
+    margin-right: 10px;
+    font-size: 27px;
+    padding: 5px;
+}
+
+footer .footer-content .container .quick-contact .right a:last-child {
+    margin-right: 0px;
+}
+
+footer .footer-content .container .quick-contact .left {
+    text-align: left;
+}
+
+footer .footer-content .container .quick-contact .left input {
+    border: 1px solid transparent;
+    height: 45px;
+    font-size: 17px;
+    width: 510px;
+    color: #575757;
+    padding: 10px;
+}
+footer .footer-content .container .quick-contact .left button {
+    background-color: #fa9c12;
+    width: 200px;
+    margin-left: -5px;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+footer .footer-content .container .quick-contact .left button:hover {
+    background-color: white;
+    color: #fa9c12;
+    transition: .3s;
+}
+footer .socket {
+    font-size: 17px;
+    font-weight: 400;
+    padding: 25px 0px;
+    color: #222222;
+}
+/* END */
